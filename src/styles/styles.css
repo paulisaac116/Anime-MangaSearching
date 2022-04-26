@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    padding: 2rem;
+}
+
+img {
+     display: inline-block;
+}
+
+.main p {
+    margin: 10px 0;
+}
+
+.searching-bar {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.form-bar {
+    width: 100%;
+    /* flex-basis: calc(90% - .5rem); */
+
+}
+
+.form-bar .input-border {
+    margin-left: 150px;
+    padding: .3rem 20px;
+    border: 2px solid grey;
+    border-radius: 20px;
+
+}
+
+.form-bar .input-border input {
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+}
+
+.button-toggle {
+    /* flex-basis: calc(10% - .5rem); */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    /* height: 100%; */
+}
+
+.button-toggle button {
+    width: 130px;
+    height: 33px;
+    /* width: 110px; */
+    border: 2px solid grey;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    /* transition: 0ms; */
+}
+
+.button-toggle button:hover {
+
+    background-color: rgb(57, 56, 56);
+    color: white;
+    transition: 450ms;
+}
+
+.anime-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 47%);
+    column-gap: 3rem;
+}
+
+.anime-item {
+    margin-top: 20px;
+}
+
+.anime-item h3 {
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+}
+
+.anime-item p {
+    padding: 5px 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.anime-item .anime-item__images {
+    display: flex;
+    height: 350px;
+    position: relative;
+}
+
+.anime-item__images .poster {
+    height: 250px;
+    
+    position: absolute;
+    bottom: 0;
+    border: 5px solid black;
+    z-index: 500;
+}
+.anime-item__images .cover {
+    width: 100%;
+    z-index: 400;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
